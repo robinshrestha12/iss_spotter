@@ -24,8 +24,6 @@
 //     return;
 //   }
 
-//   console.log('It worked! Returned flyover times:' , passTimes);
-// });
 const { nextISSTimesForMyLocation } = require('./iss');
 const printPasstimes = function(passTimes) {
   for (const pass of passTimes) {
@@ -42,3 +40,4 @@ nextISSTimesForMyLocation((error, passTimes) => {
   }
   printPasstimes(passTimes);
 });
+
